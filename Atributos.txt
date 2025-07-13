@@ -1,0 +1,24 @@
+d-none
+$("#top-form").removeClass('d-none'); //muestra
+$("#top-form").addClass('d-none'); //oculta
+
+document.getElementById("listadoregistros").style.display = "block"; //muestra
+document.getElementById("listadoregistros").style.display = "none"; //oculta
+
+$('#cat-modal').modal('show') //muestra
+$('#cat-modal').modal('hide') //oculta
+
+
+
+<input type="hidden" id="nuevo"> //caja de texto oculta
+Agregar: nuevo=1
+Editar: nuevo=0
+
+nuevo == 1 ? "../ajax/categoria.php?op=guardar" : "../ajax/categoria.php?op=editar";
+
+ <input type="hidden" id="modal-categoria-id"> //caja de texto oculta
+Guarda el id de la categoría seleccionada
+ id = $('#modal-categoria-id').val() //luego se usa en eliminar
+
+
+
